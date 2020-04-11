@@ -1,0 +1,29 @@
+@import "defaults";
+
+.nav {
+  grid-area: nav;
+  background-color: #292B2E;
+  padding: 10px;
+  border-bottom: 5px solid #BB7C3E;
+  display: flex;
+  align-items: center;
+
+  .nav__container {
+    display: grid;
+    grid-template-areas: ". navContent";
+    grid-template-columns: [container_left] 250px [container_center] auto [container_right];
+  }
+
+  .nav__list {
+    display: flex;
+    list-style-type: none;
+    grid-area: navContent;
+
+    .nav__list-item {
+      color: #f2f2f2;
+      display: flex;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+}

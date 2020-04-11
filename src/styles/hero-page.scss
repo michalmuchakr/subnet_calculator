@@ -1,0 +1,13 @@
+@import "defaults";
+
+.hero-page {
+    .hero-page__list {
+        .hero-page__list__item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+    }
+}

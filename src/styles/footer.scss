@@ -1,0 +1,13 @@
+@import "defaults";
+
+.footer {
+    font-size: 12px;
+    color: #fff;
+    background: $bg-v-dark;
+    line-height: 30px;
+    padding-left: 16px;
+
+    p {
+        margin: 0;
+    }
+}

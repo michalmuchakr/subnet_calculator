@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('./reset.scss');
+@import "defaults";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+@import "defaults";
+
+h2 {
+  color: #000;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: [left] 250px [containerLeft] auto [right];
+  grid-template-rows: [top] 56px [row1-end] auto [third-line] 30px [bottom];
+  align-items: stretch;
+  grid-template-areas:
+    "nav nav"
+    ". container"
+    "footer footer";
+  background: $bg-light;
+
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: [left] 25px [containerLeft] auto [right];
+  }
+}
+
+.container {
+  overflow: auto;
+  grid-area: container;
+  padding-left: 10px;
+  display: grid;
+  grid-template-areas: "page side";
+  grid-template-columns: [container_left] auto [container_center] 250px [container_right];
+
+  @media only screen and (max-width: 1024px) {
+    padding-left: 0;
+    grid-template-columns: [container_left] auto [container_center] 25px [container_right];
+  }
+}
+
+.page {
+  grid-area: page;
+}
+
+.footer {
+  grid-area: footer;
+}
