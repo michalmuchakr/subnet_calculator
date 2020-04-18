@@ -12,6 +12,12 @@
     display: grid;
     grid-template-areas: ". navContent";
     grid-template-columns: [container_left] 250px [container_center] auto [container_right];
+
+    @media only screen and (max-width: 1024px) {
+      padding-left: 15px;
+      grid-template-columns: [container_left] auto [container_center] 25px [container_right];
+      grid-template-areas: "navContent .";
+    }
   }
 
   .nav__list {
@@ -24,6 +30,8 @@
       display: flex;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
     }
   }
 }

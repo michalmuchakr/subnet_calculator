@@ -5,9 +5,19 @@
     color: #fff;
     background: $bg-v-dark;
     line-height: 30px;
-    padding-left: 16px;
+    display: grid;
+    grid-template-areas: ". footerContent";
+    grid-template-columns: [container_left] 250px [container_center] auto [container_right];
 
     p {
         margin: 0;
+        padding-left: 10px;
+        grid-area: footerContent;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        padding-left: 15px;
+        grid-template-columns: [container_left] auto [container_center] 25px [container_right];
+        grid-template-areas: "footerContent .";
     }
 }

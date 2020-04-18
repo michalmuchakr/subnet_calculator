@@ -30,22 +30,3 @@
 <code>
   npm build
 </code>
-
-<p>
-  Functionalities included:
-</p>
-
-<ul>
-  <li>
-    React JS.
-  </li>
-  <li>
-    Hot reload development server.
-  </li>
-  <li>
-    SCSS preprocesor included.
-  </li>
-  <li>
-    Absolute paths import.
-  </li>
-</ul>

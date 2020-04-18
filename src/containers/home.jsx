@@ -1,9 +1,10 @@
 import React from "react";
+import Form from "components/form.jsx";
 
 function Home() {
   return (
     <div className="home-page page">
-      <h1>Home</h1>
+      <Form />
     </div>
   );
 }
