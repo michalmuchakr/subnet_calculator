@@ -1,3 +1,5 @@
+https://subnet-calculator-agh.herokuapp.com/
+
 <h3>
   Before application could be started run:
 </h3>
