@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap');
 
-@import url('./reset.scss');
+@import './reset.scss';
 @import "defaults";
 
 * {
@@ -12,8 +12,6 @@ body {
   font-family: 'Roboto', sans-serif;
   position: relative;
 }
-
-@import "defaults";
 
 h2 {
   color: #000;

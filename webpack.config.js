@@ -1,13 +1,10 @@
 const HtmlWebPlugin = require('html-webpack-plugin'),
-  ExtractTextPlugin = require("extract-text-webpack-plugin"),
   path = require('path');
 
 const htmlPlugin = new HtmlWebPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
-
-const extractPlugin = new ExtractTextPlugin('style.css');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -43,7 +40,6 @@ module.exports = {
     port: 1234
   },
   plugins: [
-    htmlPlugin,
-    extractPlugin
+    htmlPlugin
   ]
 }
